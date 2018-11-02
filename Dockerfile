@@ -1,8 +1,7 @@
-FROM debian:stretch
+FROM buildpack-deps:stretch-curl
 
 RUN apt-get update -y
 RUN apt-get install -y \
-    curl \
     xz-utils \
     poppler-utils \
     gettext \
